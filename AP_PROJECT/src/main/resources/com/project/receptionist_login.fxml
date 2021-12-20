@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="root" minHeight="800.0" minWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.UiController">
+    <left>
+        <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1200.0" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="585.0" prefWidth="593.0">
+                    <children>
+                        <ImageView fitHeight="442.0" fitWidth="605.0" layoutX="23.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@logo.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="151.0" layoutY="76.0" style="-fx-background-color: #3e98ff; -fx-padding: 20px; -fx-background-radius: 40px;" text="Commercial Airline System" textFill="WHITE">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Button layoutX="185.0" layoutY="248.0" minHeight="70.0" minWidth="270.0" mnemonicParsing="false" onAction="#receptionistClick" style="-fx-background-radius: 40px; -fx-background-color: #3e98ff;" text="Receptionist Log In" textFill="WHITE">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="receptionistUsername" layoutX="204.0" layoutY="361.0" promptText="Username" style="-fx-background-radius: 0px;">
+                            <font>
+                                <Font size="18.0" />
+                            </font></TextField>
+                        <PasswordField fx:id="receptionistPassword" layoutX="202.0" layoutY="423.0" promptText="Password">
+                            <font>
+                                <Font size="18.0" />
+                            </font></PasswordField>
+                        <Button fx:id="back" layoutX="485.0" layoutY="716.0" mnemonicParsing="false" onAction="#backClick" prefHeight="49.0" prefWidth="77.0" style="-fx-background-radius: 40px; -fx-background-color: #3e98ff;" text="Back" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font></Button>
+                        <Button fx:id="receptionistLogIn" layoutX="258.0" layoutY="516.0" mnemonicParsing="false" onAction="#receptionistLogInClick" prefHeight="35.0" prefWidth="120.0" style="-fx-background-radius: 20px; -fx-background-color: #3e98ff;" text="Log In" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font></Button>
+                  <Text fx:id="statusText" fill="#f24e4e" layoutX="235.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="158.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </left>
+</BorderPane>
